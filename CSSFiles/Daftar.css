@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+.sub-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(AssetsCSS/banner_regis.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.regist-box {
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background: #ffffff;
+    padding: 5px;
+}   
+.button {
+    width: auto;
+    max-width: 200px;
+    margin: 35px auto;
+    text-align: center;
+    position: relative;
+}
+.input-group {
+    margin-top: 20px;
+    position: relative;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #10a7ff, #00ffaa);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+nav{
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #66bbf3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .daftar {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .kotak-daftar{
+        width: 80%;
+        height: auto;
+        margin: 10% auto;
+        padding: 20px;
+    }
+    .tombol {
+        width: auto;
+        margin: 0;
+    }
+    .input-group {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .input-col {
+        flex-direction: column;
+    }
+    .input-col input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .submit-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #66bbf3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: ls;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}

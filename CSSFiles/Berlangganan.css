@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(32, 18, 1, 0.486),rgba(51, 28, 2, 0.486)), url(AssetsCSS/bannerberlangganan.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #66bbf3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #66bbf3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: ls;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*--------- program ------- */
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.program{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; 
+}
+
+.prog-col{
+    flex-basis: calc(33.333% - 20px);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.prog-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+p{
+    color: #3a3a3a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: transparent;
+    transition: background 0.3s, color 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+
+.layer:hover .submit-btn {
+    background: linear-gradient(to right, #10a7ff, #00ffaa);
+    color: black;
+    opacity: 1;
+}
+
+.layer:hover{
+    background: #19a3ff8c;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 600;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer p{
+    width: 100%;
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p{
+    bottom: 18%;
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+        gap: 20px; /* Adjust gap for smaller screens */
+    }
+
+    .prog-col {
+        flex-basis: 100%;
+        margin-bottom: 20px; /* Adjust bottom margin for smaller screens */
+    }
+}
+
+/*--------- Footer ------- */
+.footer {
+    background-color: #2e87c2;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+}
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+.contact-info img {
+    margin-right: 10px;
+}
+.contact-info p{
+    margin: 5px 0;
+}
+.footer-column h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-column p {
+    color: #fff;
+    margin: 5px 0;
+}
+.footer-bottom {
+    background-color: #2e87c2;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    color: #fff;
+}

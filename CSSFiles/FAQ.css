@@ -157,7 +157,8 @@ p{
 }
 .feature-col{
     flex-basis: 31%;
-    background-color: #66bbf3;
+    background-color: #ffab43;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     margin-bottom: 5%;
     padding: 20px 15px;
@@ -171,7 +172,7 @@ h3{
 
 }
 .feature-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
 @media(max-width:700px){
     .row{

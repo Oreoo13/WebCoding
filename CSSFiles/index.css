@@ -157,6 +157,7 @@ p{
 .rekomendasi-col{
     flex-basis: 31%;
     background-color: #ffab43;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     margin-bottom: 5%;
     padding: 20px 15px;
@@ -198,6 +199,7 @@ h3{
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .prog-col img{
     width: 100%;

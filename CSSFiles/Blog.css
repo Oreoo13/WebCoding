@@ -128,128 +128,82 @@ nav .fa{
 }
 
 /*--------- program ------- */
-h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.program{
-    width: 80%;
+.blog-section {
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding-bottom: 50px;
+    padding: 60px 0;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.row{
-    margin-top: 5%;
+.blog-section h1 {
+    font-size: 32px;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.blog-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.blog-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px; 
+    gap: 30px;
 }
 
-.prog-col{
+.blog-col {
     flex-basis: calc(33.333% - 20px);
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
+    background-color: #ffab43;
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.prog-col img{
+.blog-col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.blog-col img {
     width: 100%;
-    display: block;
+    height: 200px;
+    object-fit: cover;
 }
 
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+.blog-content {
+    padding: 20px;
 }
 
-p{
-    color: #3a3a3a;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+.blog-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
 }
 
-.submit-btn {
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto 0;
-    background: transparent;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-    color: transparent;
-    transition: background 0.3s, color 0.3s, opacity 0.3s;
-    opacity: 0;
+.blog-content p {
+    font-size: 16px;
+    color: #555;
 }
 
-.layer:hover .submit-btn {
-    background: linear-gradient(to right, #10a7ff, #00ffaa);
-    color: black;
-    opacity: 1;
-}
-
-.layer:hover{
-    background: #19a3ff8c;
-}
-
-.layer h3{
-    width: 100%;
-    font-weight: 600;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
-}
-
-.layer p{
-    width: 100%;
-    color: #000000;
-    font-weight: 600;
-    font-size: 18px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.layer:hover p{
-    bottom: 18%;
-    opacity: 1;
-}
-
-@media (max-width: 700px) {
-    .row {
-        flex-direction: column;
-        gap: 20px; /* Adjust gap for smaller screens */
+/* Responsive */
+@media (max-width: 992px) {
+    .blog-col {
+        flex-basis: calc(50% - 20px);
     }
+}
 
-    .prog-col {
+@media (max-width: 600px) {
+    .blog-col {
         flex-basis: 100%;
-        margin-bottom: 20px; /* Adjust bottom margin for smaller screens */
     }
 }
+
 
 /*--------- Footer ------- */
 footer {

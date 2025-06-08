@@ -11,29 +11,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <meta name="title" content="JeniusAcademy - Platform Belajar Online Terbaik">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="Assets/unveiledFavicon.png">
 </head>
+
+<audio id="player" src="Assets/backsoundWeb.mp3" autoplay loop></audio>
+
+<!-- Tombol Pause -->
+<button id="bgm-btn" onclick="pauseAudio()">
+    <i class="fa fa-pause"></i>
+</button>
+
 <body>
 <section class="header">
     <nav>
-        <a href="Website.html"><img src="Assets/Jenius-removebg-preview.png"></a>
+        <div class="logo">
+                <img src='Assets/unveiledHeader.png' alt="UnveiledBaliWhite">
+            </div>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times-circle" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="Daftar.html">DAFTAR</a></li>
-                <li><a href="Berlangganan.html">BERLANGGANAN</a></li>
-                <li><a href="Home.html">HOME</a></li>
-                <li><a href="Belajar.html">MULAI BELAJAR</a></li>
+                <li><a href="TravelGuide.html">Travel Guide</a></li>
+                <li><a href="Blog.html">Blog & Article</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FAQ.html">Frequently Asked Questions</a></li>
             </ul>
         </div>
         <i class="fa fa-bars"  onclick="showMenu()"></i>
     </nav>
 
 <div class="text-box">
-    <h1>Testimoni para Alumni dan Pengguna JeniusAcademy</h1>
+    <h1>Temukan Keindahan dan Budaya Bali yang Memikat</h1>
+    <p>Dari pantai yang eksotis hingga tradisi yang memikat, semua informasi wisata Bali hadir di satu tempat, 
+        <br>Temukan panduan perjalanan, rekomendasi destinasi, serta kisah budaya Bali yang autentik hanya di sini.
     <a href=""></a>
+    
 </div>
-</section>
+
+    </section>
 
 <!-----Testimoni----->
 <section class="testimoni">
@@ -120,44 +135,28 @@
 </section>
 
 
-<!-----Footer------>
     <section class="footer">
-
+    <!-----Footer------>
+        <footer>
         <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-column">
-                    <img src="Assets/Jenius-removebg-preview.png" height="100">
-                    <h4>JeniusAcademy HeadQuarters</h4>
-                    <p>Jl. Celana Goyang IV No.17, Tower XYZ Office Center lt.19, Puri, Kembangan, Kota Jakarta Barat, 
-                        Daerah Khusus Ibukota Jakarta 11780</p>
-                        <br>
-                    <h4>AYO GABUNG SEKARANG</h4>
+            <img src="Assets/unveiledFooter.png">
+                <h2>UnveiledBali HeadQuarters</h2>
+                <h4>Jalan Sunset Road no. 127, Badung, Bali</h4>
+                <div class="footer-menu-container">
+                    <ul>
+                        <li><a href="TravelGuide.html">Travel Guide</a></li>
+                        <li><a href="Blog.html">Blog & Article</a></li>
+                        <li><a href="Testimoni.html">Testimoni</a></li>
+                        <li><a href="FAQ.html">Frequently Asked Questions</a></li>
+                    </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Hubungi Kami</h4>
-                    <p>jeniusacademy@info.com</p>
-                    <p>02199994003200</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="footer-column">
-                    <h4>Program</h4>
-                    <p>Bimbel Intensif</p>
-                    <p>Bimbel Bahasa</p>
-                    <p>Bimbel Matematika</p>
-                    <p>Bimbel Fisika</p>
-                    <p>Bimbel Kimia</p>
-                    <p>Video Based Learning</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Ikuti Kami</h4>
-                    <p>Facebook</p>
-                    <p>Twitter</p>
-                    <p>Instagram</p>
-                </div>
-            </div>
+                <p>copyright @2025 - UnveiledBali | design by Kelompok Hiling</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 JeniusAcademy. All Rights Reserved.</p>
-        </div>
+    </footer>
     </section>
 
     <!----JavaScript for Toggle Menu----->

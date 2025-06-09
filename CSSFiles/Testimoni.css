@@ -128,21 +128,32 @@ nav .fa{
 }
 
 /*------Testimoni----------*/
+#title {
+    font-size: 50px;       /* Ukuran teks */
+    color: white;          /* Warna teks */
+    text-align: center;    /* Posisi teks di tengah */
+    margin-bottom: 40px;   /* Jarak ke testimoni di bawahnya */
+}
+
 .testimoni{
     width: 80%;
     margin: auto;
-    padding-top: 100px;
     text-align: center;
+    color:white;
+    
+
 }
-.testimoni-col{
+.testimoni-col {
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
+    margin-top: 100px;
     text-align: left;
-    background: #66bbf3;
+    background: rgba(255, 255, 255, 0.5);
     padding: 25px;
     cursor: pointer;
     display: flex;
+    color: rgb(0, 0, 0);
 }
 .testimoni-col img{
     height: 40px;
@@ -152,10 +163,12 @@ nav .fa{
 }
 .testimoni-col p{
     padding: 0;
+    color: rgb(0, 0, 0); /* text color white */
 }
 .testimoni-col h3{
     margin-top: 15px;
     text-align: left;
+    color: rgb(0, 0, 0); /* text color white */
 }
 .testimoni-col .fa{
     color: #f44336;

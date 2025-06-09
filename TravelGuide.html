@@ -14,42 +14,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="icon" type="image/png" href="Assets/unveiledFavicon.png">
 </head>
+
+<audio id="player" src="Assets/backsoundWeb.mp3" autoplay loop></audio>
+
+<!-- Tombol Pause -->
+<button id="bgm-btn" onclick="pauseAudio()">
+    <i class="fa fa-pause"></i>
+</button>
+
 <body>
-<section class="sub-header">
-    <nav> 
-        <a href="Daftar.html"><img src="Assets/Jenius-removebg-preview.png"></a>
+<section class="header">
+    <nav>
+        <div class="logo">
+                <img src='Assets/unveiledHeader.png' alt="UnveiledBaliWhite">
+            </div>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times-circle" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="Berlangganan.html">BERLANGGANAN</a></li>
-                <li><a href="Testimoni.html">TESTIMONI</a></li>
-                <li><a href="Belajar.html">MULAI BELAJAR</a></li>
+                <li><a href="TravelGuide.html">Travel Guide</a></li>
+                <li><a href="Blog.html">Blog & Article</a></li>
+                <li><a href="Testimoni.html">Testimoni</a></li>
+                <li><a href="FAQ.html">Frequently Asked Questions</a></li>
             </ul>
         </div>
         <i class="fa fa-bars"  onclick="showMenu()"></i>
     </nav>
 
-    <div class="regist">
-        <div class="regist-box">
-            <div class="button">
-                <h2>Yuk Daftar Sekarang!</h2>
+<div class="text-box">
+    <h1>Temukan Keindahan dan Budaya Bali yang Memikat melalui rekomendasi Video ini</h1>
+    <p>Dari pantai yang eksotis hingga tradisi yang memikat, semua informasi wisata Bali hadir di satu tempat, 
+        <br>Temukan panduan perjalanan, rekomendasi destinasi, serta kisah budaya Bali yang autentik melalui video dibawah ini.
+    <a href=""></a>
+    
+</div>
+
+    </section>
+    <!--------- rekomendasi -------->
+
+    <section class="rekomendasi">
+        <h1 id="Tguide">Travel Guide</h1>
+        <p id="Tguide2">Berikut adalah beberapa rekomendasi video yang akan membantu perjalanan kamu menjadi lebih autentik</p>
+
+        <div class="row">
+            <div class="rekomendasi-col">
+                <a href="https://youtu.be/kZ06nOhdr6Q?si=t1cGZ_Qwz1mpHFiV" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.ytimg.com/an_webp/kZ06nOhdr6Q/mqdefault_6s.webp?du=3000&sqp=CKTImMIG&rs=AOn4CLAqwWcYuxnBAE376h3Hl_lVReSqeg" alt="Tanah Lot Video Thumbnail">
+                    <h3>Bali 2025 Travel Guide</h3>
+                    <p> Best Places to Visit & Things to Do • Ubud, Canggu, Seminyak • Budget Vlog</p>
+                </a>
             </div>
-            <form class="input-group">
-                <input type="text" class="input-field" placeholder="Nama Pertama" required>
-                <input type="text" class="input-field" placeholder="Nama Akhir" required>
-                <input type="text" class="input-field" placeholder="Email" required>
-                <input type="number" class="input-field" placeholder="Nomor Telepon" required>
-                <input type="text" class="input-field" placeholder="Password" required>
-                <input type="text" class="input-field" placeholder="Ulangi-Password" required>
-                <button type="submit" class="submit-btn">Masuk</button>
-            </form>
+            <div class="rekomendasi-col">
+                <a href="https://youtu.be/CBwKJfrm5-U?si=04S8P0-C-B8QwlKx" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.ytimg.com/an_webp/CBwKJfrm5-U/mqdefault_6s.webp?du=3000&sqp=CLXNmMIG&rs=AOn4CLDHtCKGFOPztHqqVhLahox2JBlLyA" alt="Pantai Kuta Video Thumbnail">
+                    <h3>Bali Travel Guide</h3>
+                    <p>How to travel Bali for First-timers</p>
+                </a>
+            </div>
+            <div class="rekomendasi-col">
+                <a href="https://youtu.be/XHKeo8Q1t-U?si=bs_54O9ac9lpDWb-" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.ytimg.com/an_webp/XHKeo8Q1t-U/mqdefault_6s.webp?du=3000&sqp=CJbJmMIG&rs=AOn4CLBXHTzxmnKGbJPrtUrHIm7JDhhaSQ" alt="Ubud Video Thumbnail">
+                    <h3>Pertama Kali di INDONESIA</h3>
+                    <p>Kami Menemukan Surga!</p>
+                </a>
+            </div>
+            <div class="rekomendasi-col">
+                <a href="https://youtu.be/HEu0G8CRGoQ?si=xv5ROqoZ2p1fUFgv" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.ytimg.com/an_webp/HEu0G8CRGoQ/mqdefault_6s.webp?du=3000&sqp=CKSvmMIG&rs=AOn4CLAaPi0RfMG73lHLi8CAN3aJCD8wgw" alt="Pura Ulun Danu Beratan Video Thumbnail">
+                    <h3>BIKIN NGILER</h3>
+                    <p>Rasa Lokal, Eksotis, dan Menggugah Selera</p>
+                </a>
+            </div>
+            <div class="rekomendasi-col">
+                <a href="https://youtu.be/VcRm5trjAXY?si=StGB44JIscMKlx67" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.ytimg.com/an_webp/VcRm5trjAXY/mqdefault_6s.webp?du=3000&sqp=CLC-mMIG&rs=AOn4CLBv7KeRs8qjaT5-4-GG7UEwSjjXpg" alt="Nusa Penida Video Thumbnail">
+                    <h3>KULINER MAKANAN KHAS BALI!</h3>
+                    <p>Makanan Bali yang enak, recommended, dan disukai pendatang</p>
+                </a>
+            </div>
         </div>
-    </div>
 
     </section>
 
-<script src="JSFIles/TravelGuide.js"></script>
 
+    <section class="footer">
+    <!-----Footer------>
+        <footer>
+        <div class="footer-container">
+            <img src="Assets/unveiledFooter.png">
+                <h2>UnveiledBali HeadQuarters</h2>
+                <h4>Jalan Sunset Road no. 127, Badung, Bali</h4>
+                <div class="footer-menu-container">
+                    <ul>
+                        <li><a href="TravelGuide.html">Travel Guide</a></li>
+                        <li><a href="Blog.html">Blog & Article</a></li>
+                        <li><a href="Testimoni.html">Testimoni</a></li>
+                        <li><a href="FAQ.html">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>copyright @2025 - UnveiledBali | design by Kelompok Hiling</p>
+        </div>
+    </footer>
+    </section>
+
+    <!----JavaScript for Toggle Menu----->
+<script src="JSFIles/index.js"></script>
+
+
+    
 </body>
 </html>

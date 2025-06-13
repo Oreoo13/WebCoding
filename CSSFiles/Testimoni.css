@@ -156,10 +156,10 @@ nav .fa{
     color: rgb(0, 0, 0);
 }
 .testimoni-col img{
-    height: 40px;
+    height: 100px;
     margin-left: 5px;
     margin-right: 30px;
-    border-radius: 50%;
+    border-radius: 15px;
 }
 .testimoni-col p{
     padding: 0;
